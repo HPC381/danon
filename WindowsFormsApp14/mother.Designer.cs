@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mother));
             System.Windows.Forms.Label stampLabel;
             System.Windows.Forms.Label modelLabel;
             System.Windows.Forms.Label socketLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mother));
             this.compDataSet = new WindowsFormsApp14.compDataSet();
             this.motherboardsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.motherboardsTableAdapter = new WindowsFormsApp14.compDataSetTableAdapters.MotherboardsTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp14.compDataSetTableAdapters.TableAdapterManager();
             this.motherboardsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.motherboardsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.stampTextBox = new System.Windows.Forms.TextBox();
             this.modelTextBox = new System.Windows.Forms.TextBox();
@@ -66,6 +66,33 @@
             this.motherboardsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.motherboardsDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // stampLabel
+            // 
+            stampLabel.AutoSize = true;
+            stampLabel.Location = new System.Drawing.Point(10, 31);
+            stampLabel.Name = "stampLabel";
+            stampLabel.Size = new System.Drawing.Size(89, 13);
+            stampLabel.TabIndex = 1;
+            stampLabel.Text = "Производитель:";
+            // 
+            // modelLabel
+            // 
+            modelLabel.AutoSize = true;
+            modelLabel.Location = new System.Drawing.Point(6, 57);
+            modelLabel.Name = "modelLabel";
+            modelLabel.Size = new System.Drawing.Size(49, 13);
+            modelLabel.TabIndex = 3;
+            modelLabel.Text = "Модель:";
+            // 
+            // socketLabel
+            // 
+            socketLabel.AutoSize = true;
+            socketLabel.Location = new System.Drawing.Point(6, 83);
+            socketLabel.Name = "socketLabel";
+            socketLabel.Size = new System.Drawing.Size(40, 13);
+            socketLabel.TabIndex = 5;
+            socketLabel.Text = "Сокет:";
             // 
             // compDataSet
             // 
@@ -119,9 +146,34 @@
             this.motherboardsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.motherboardsBindingNavigator.Name = "motherboardsBindingNavigator";
             this.motherboardsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.motherboardsBindingNavigator.Size = new System.Drawing.Size(705, 25);
+            this.motherboardsBindingNavigator.Size = new System.Drawing.Size(1004, 25);
             this.motherboardsBindingNavigator.TabIndex = 0;
             this.motherboardsBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -150,22 +202,16 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -173,7 +219,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -182,90 +228,45 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // motherboardsBindingNavigatorSaveItem
             // 
             this.motherboardsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.motherboardsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("motherboardsBindingNavigatorSaveItem.Image")));
             this.motherboardsBindingNavigatorSaveItem.Name = "motherboardsBindingNavigatorSaveItem";
-            this.motherboardsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.motherboardsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.motherboardsBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.motherboardsBindingNavigatorSaveItem.Click += new System.EventHandler(this.motherboardsBindingNavigatorSaveItem_Click);
-            // 
-            // stampLabel
-            // 
-            stampLabel.AutoSize = true;
-            stampLabel.Location = new System.Drawing.Point(10, 31);
-            stampLabel.Name = "stampLabel";
-            stampLabel.Size = new System.Drawing.Size(40, 13);
-            stampLabel.TabIndex = 1;
-            stampLabel.Text = "Stamp:";
             // 
             // stampTextBox
             // 
             this.stampTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motherboardsBindingSource, "Stamp", true));
-            this.stampTextBox.Location = new System.Drawing.Point(56, 28);
+            this.stampTextBox.Location = new System.Drawing.Point(95, 28);
             this.stampTextBox.Name = "stampTextBox";
-            this.stampTextBox.Size = new System.Drawing.Size(100, 20);
+            this.stampTextBox.Size = new System.Drawing.Size(308, 20);
             this.stampTextBox.TabIndex = 2;
-            // 
-            // modelLabel
-            // 
-            modelLabel.AutoSize = true;
-            modelLabel.Location = new System.Drawing.Point(11, 57);
-            modelLabel.Name = "modelLabel";
-            modelLabel.Size = new System.Drawing.Size(39, 13);
-            modelLabel.TabIndex = 3;
-            modelLabel.Text = "Model:";
             // 
             // modelTextBox
             // 
             this.modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motherboardsBindingSource, "Model", true));
             this.modelTextBox.Location = new System.Drawing.Point(56, 54);
             this.modelTextBox.Name = "modelTextBox";
-            this.modelTextBox.Size = new System.Drawing.Size(100, 20);
+            this.modelTextBox.Size = new System.Drawing.Size(347, 20);
             this.modelTextBox.TabIndex = 4;
-            // 
-            // socketLabel
-            // 
-            socketLabel.AutoSize = true;
-            socketLabel.Location = new System.Drawing.Point(6, 83);
-            socketLabel.Name = "socketLabel";
-            socketLabel.Size = new System.Drawing.Size(44, 13);
-            socketLabel.TabIndex = 5;
-            socketLabel.Text = "Socket:";
             // 
             // socketTextBox
             // 
             this.socketTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.motherboardsBindingSource, "Socket", true));
             this.socketTextBox.Location = new System.Drawing.Point(56, 80);
             this.socketTextBox.Name = "socketTextBox";
-            this.socketTextBox.Size = new System.Drawing.Size(100, 20);
+            this.socketTextBox.Size = new System.Drawing.Size(347, 20);
             this.socketTextBox.TabIndex = 6;
             // 
             // motherboardsDataGridView
@@ -277,9 +278,9 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.motherboardsDataGridView.DataSource = this.motherboardsBindingSource;
-            this.motherboardsDataGridView.Location = new System.Drawing.Point(187, 31);
+            this.motherboardsDataGridView.Location = new System.Drawing.Point(409, 28);
             this.motherboardsDataGridView.Name = "motherboardsDataGridView";
-            this.motherboardsDataGridView.Size = new System.Drawing.Size(444, 220);
+            this.motherboardsDataGridView.Size = new System.Drawing.Size(583, 220);
             this.motherboardsDataGridView.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn2
@@ -300,11 +301,11 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Socket";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // Form4
+            // mother
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 264);
+            this.ClientSize = new System.Drawing.Size(1004, 264);
             this.Controls.Add(this.motherboardsDataGridView);
             this.Controls.Add(socketLabel);
             this.Controls.Add(this.socketTextBox);
@@ -313,7 +314,7 @@
             this.Controls.Add(stampLabel);
             this.Controls.Add(this.stampTextBox);
             this.Controls.Add(this.motherboardsBindingNavigator);
-            this.Name = "Form4";
+            this.Name = "mother";
             this.Text = "Мат плата";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.compDataSet)).EndInit();

@@ -83,45 +83,45 @@
             stampLabel.AutoSize = true;
             stampLabel.Location = new System.Drawing.Point(5, 43);
             stampLabel.Name = "stampLabel";
-            stampLabel.Size = new System.Drawing.Size(40, 13);
+            stampLabel.Size = new System.Drawing.Size(89, 13);
             stampLabel.TabIndex = 1;
-            stampLabel.Text = "Stamp:";
+            stampLabel.Text = "Производитель:";
             // 
             // modelLabel
             // 
             modelLabel.AutoSize = true;
             modelLabel.Location = new System.Drawing.Point(6, 69);
             modelLabel.Name = "modelLabel";
-            modelLabel.Size = new System.Drawing.Size(39, 13);
+            modelLabel.Size = new System.Drawing.Size(49, 13);
             modelLabel.TabIndex = 3;
-            modelLabel.Text = "Model:";
+            modelLabel.Text = "Модель:";
             // 
             // memorySizeLabel
             // 
             memorySizeLabel.AutoSize = true;
             memorySizeLabel.Location = new System.Drawing.Point(8, 95);
             memorySizeLabel.Name = "memorySizeLabel";
-            memorySizeLabel.Size = new System.Drawing.Size(70, 13);
+            memorySizeLabel.Size = new System.Drawing.Size(85, 13);
             memorySizeLabel.TabIndex = 5;
-            memorySizeLabel.Text = "Memory Size:";
+            memorySizeLabel.Text = "Объем памяти:";
             // 
             // memoryTypeLabel
             // 
             memoryTypeLabel.AutoSize = true;
             memoryTypeLabel.Location = new System.Drawing.Point(4, 121);
             memoryTypeLabel.Name = "memoryTypeLabel";
-            memoryTypeLabel.Size = new System.Drawing.Size(74, 13);
+            memoryTypeLabel.Size = new System.Drawing.Size(69, 13);
             memoryTypeLabel.TabIndex = 7;
-            memoryTypeLabel.Text = "Memory Type:";
+            memoryTypeLabel.Text = "Тип памяти:";
             // 
             // interfaceLabel
             // 
             interfaceLabel.AutoSize = true;
-            interfaceLabel.Location = new System.Drawing.Point(26, 147);
+            interfaceLabel.Location = new System.Drawing.Point(6, 147);
             interfaceLabel.Name = "interfaceLabel";
-            interfaceLabel.Size = new System.Drawing.Size(52, 13);
+            interfaceLabel.Size = new System.Drawing.Size(93, 13);
             interfaceLabel.TabIndex = 9;
-            interfaceLabel.Text = "Interface:";
+            interfaceLabel.Text = "Тип интерфейса:";
             // 
             // compDataSet
             // 
@@ -179,7 +179,7 @@
             this.videoCardsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.videoCardsBindingNavigator.Name = "videoCardsBindingNavigator";
             this.videoCardsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.videoCardsBindingNavigator.Size = new System.Drawing.Size(823, 25);
+            this.videoCardsBindingNavigator.Size = new System.Drawing.Size(990, 25);
             this.videoCardsBindingNavigator.TabIndex = 0;
             this.videoCardsBindingNavigator.Text = "bindingNavigator1";
             this.videoCardsBindingNavigator.RefreshItems += new System.EventHandler(this.videoCardsBindingNavigator_RefreshItems);
@@ -282,25 +282,25 @@
             // stampTextBox
             // 
             this.stampTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.videoCardsBindingSource, "Stamp", true));
-            this.stampTextBox.Location = new System.Drawing.Point(51, 40);
+            this.stampTextBox.Location = new System.Drawing.Point(100, 40);
             this.stampTextBox.Name = "stampTextBox";
-            this.stampTextBox.Size = new System.Drawing.Size(100, 20);
+            this.stampTextBox.Size = new System.Drawing.Size(326, 20);
             this.stampTextBox.TabIndex = 2;
             // 
             // modelTextBox
             // 
             this.modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.videoCardsBindingSource, "Model", true));
-            this.modelTextBox.Location = new System.Drawing.Point(51, 66);
+            this.modelTextBox.Location = new System.Drawing.Point(61, 66);
             this.modelTextBox.Name = "modelTextBox";
-            this.modelTextBox.Size = new System.Drawing.Size(100, 20);
+            this.modelTextBox.Size = new System.Drawing.Size(365, 20);
             this.modelTextBox.TabIndex = 4;
             // 
             // memorySizeTextBox
             // 
             this.memorySizeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.videoCardsBindingSource, "MemorySize", true));
-            this.memorySizeTextBox.Location = new System.Drawing.Point(84, 92);
+            this.memorySizeTextBox.Location = new System.Drawing.Point(99, 92);
             this.memorySizeTextBox.Name = "memorySizeTextBox";
-            this.memorySizeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.memorySizeTextBox.Size = new System.Drawing.Size(327, 20);
             this.memorySizeTextBox.TabIndex = 6;
             // 
             // memoryTypeTextBox
@@ -308,15 +308,15 @@
             this.memoryTypeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.videoCardsBindingSource, "MemoryType", true));
             this.memoryTypeTextBox.Location = new System.Drawing.Point(84, 118);
             this.memoryTypeTextBox.Name = "memoryTypeTextBox";
-            this.memoryTypeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.memoryTypeTextBox.Size = new System.Drawing.Size(342, 20);
             this.memoryTypeTextBox.TabIndex = 8;
             // 
             // interfaceTextBox
             // 
             this.interfaceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.videoCardsBindingSource, "Interface", true));
-            this.interfaceTextBox.Location = new System.Drawing.Point(84, 144);
+            this.interfaceTextBox.Location = new System.Drawing.Point(99, 144);
             this.interfaceTextBox.Name = "interfaceTextBox";
-            this.interfaceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.interfaceTextBox.Size = new System.Drawing.Size(327, 20);
             this.interfaceTextBox.TabIndex = 10;
             // 
             // compsBindingSource
@@ -335,10 +335,11 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.videoCardsDataGridView.DataSource = this.videoCardsBindingSource;
-            this.videoCardsDataGridView.Location = new System.Drawing.Point(262, 40);
+            this.videoCardsDataGridView.Location = new System.Drawing.Point(432, 40);
             this.videoCardsDataGridView.Name = "videoCardsDataGridView";
             this.videoCardsDataGridView.Size = new System.Drawing.Size(546, 220);
             this.videoCardsDataGridView.TabIndex = 14;
+            this.videoCardsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.videoCardsDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -370,11 +371,11 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Interface";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // Form3
+            // gpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 277);
+            this.ClientSize = new System.Drawing.Size(990, 279);
             this.Controls.Add(this.videoCardsDataGridView);
             this.Controls.Add(interfaceLabel);
             this.Controls.Add(this.interfaceTextBox);
@@ -387,7 +388,7 @@
             this.Controls.Add(stampLabel);
             this.Controls.Add(this.stampTextBox);
             this.Controls.Add(this.videoCardsBindingNavigator);
-            this.Name = "Form3";
+            this.Name = "gpu";
             this.Text = "Видеокарта";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.compDataSet)).EndInit();

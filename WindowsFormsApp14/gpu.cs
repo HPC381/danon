@@ -36,5 +36,10 @@ namespace WindowsFormsApp14
         {
 
         }
+
+        private void videoCardsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
