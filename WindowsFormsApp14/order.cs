@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp14
 {
-    public partial class Form5 : Form
+    public partial class order : Form
     {
-        public Form5()
+        public order()
         {
             InitializeComponent();
         }

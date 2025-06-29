@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp14
 {
-    public partial class Form3 : Form
+    public partial class gpu : Form
     {
-        public Form3()
+        public gpu()
         {
             InitializeComponent();
         }

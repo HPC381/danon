@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp14
 {
-    public partial class Form2 : Form
+    public partial class cpu : Form
     {
-        public Form2()
+        public cpu()
         {
             InitializeComponent();
         }

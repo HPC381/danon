@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp14
 {
-    partial class Form3
+    partial class gpu
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             System.Windows.Forms.Label memorySizeLabel;
             System.Windows.Forms.Label memoryTypeLabel;
             System.Windows.Forms.Label interfaceLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gpu));
             this.compDataSet = new WindowsFormsApp14.compDataSet();
             this.videoCardsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.videoCardsTableAdapter = new WindowsFormsApp14.compDataSetTableAdapters.VideoCardsTableAdapter();

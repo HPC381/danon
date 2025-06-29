@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp14
 {
-    partial class Form5
+    partial class order
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             System.Windows.Forms.Label motherboardIdLabel;
             System.Windows.Forms.Label processorIdLabel;
             System.Windows.Forms.Label videoCardIdLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(order));
             this.compDataSet = new WindowsFormsApp14.compDataSet();
             this.compsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.compsTableAdapter = new WindowsFormsApp14.compDataSetTableAdapters.CompsTableAdapter();
