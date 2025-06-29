@@ -73,6 +73,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>compDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="compDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>compDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +155,17 @@
     </None>
     <None Include="compDataSet1.xss">
       <DependentUpon>compDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="compDataSet2.xsc">
+      <DependentUpon>compDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="compDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>compDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="compDataSet2.xss">
+      <DependentUpon>compDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
