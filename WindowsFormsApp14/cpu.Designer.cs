@@ -295,7 +295,7 @@
             // modelTextBox
             // 
             this.modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Model", true));
-            this.modelTextBox.Location = new System.Drawing.Point(58, 64);
+            this.modelTextBox.Location = new System.Drawing.Point(107, 64);
             this.modelTextBox.Name = "modelTextBox";
             this.modelTextBox.Size = new System.Drawing.Size(100, 20);
             this.modelTextBox.TabIndex = 4;
@@ -303,7 +303,7 @@
             // socketTextBox
             // 
             this.socketTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Socket", true));
-            this.socketTextBox.Location = new System.Drawing.Point(58, 90);
+            this.socketTextBox.Location = new System.Drawing.Point(107, 90);
             this.socketTextBox.Name = "socketTextBox";
             this.socketTextBox.Size = new System.Drawing.Size(100, 20);
             this.socketTextBox.TabIndex = 6;
@@ -311,7 +311,7 @@
             // coresTextBox
             // 
             this.coresTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Cores", true));
-            this.coresTextBox.Location = new System.Drawing.Point(58, 116);
+            this.coresTextBox.Location = new System.Drawing.Point(107, 116);
             this.coresTextBox.Name = "coresTextBox";
             this.coresTextBox.Size = new System.Drawing.Size(100, 20);
             this.coresTextBox.TabIndex = 8;
@@ -319,7 +319,7 @@
             // threadsTextBox
             // 
             this.threadsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Threads", true));
-            this.threadsTextBox.Location = new System.Drawing.Point(58, 142);
+            this.threadsTextBox.Location = new System.Drawing.Point(107, 145);
             this.threadsTextBox.Name = "threadsTextBox";
             this.threadsTextBox.Size = new System.Drawing.Size(100, 20);
             this.threadsTextBox.TabIndex = 10;
@@ -327,11 +327,10 @@
             // intGraphCheckBox
             // 
             this.intGraphCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.processorsBindingSource, "IntGraph", true));
-            this.intGraphCheckBox.Location = new System.Drawing.Point(72, 168);
+            this.intGraphCheckBox.Location = new System.Drawing.Point(178, 168);
             this.intGraphCheckBox.Name = "intGraphCheckBox";
-            this.intGraphCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.intGraphCheckBox.Size = new System.Drawing.Size(29, 24);
             this.intGraphCheckBox.TabIndex = 12;
-            this.intGraphCheckBox.Text = "checkBox1";
             this.intGraphCheckBox.UseVisualStyleBackColor = true;
             // 
             // processorsDataGridView
