@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cpu));
             System.Windows.Forms.Label stampLabel;
             System.Windows.Forms.Label modelLabel;
             System.Windows.Forms.Label socketLabel;
             System.Windows.Forms.Label coresLabel;
             System.Windows.Forms.Label threadsLabel;
             System.Windows.Forms.Label intGraphLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cpu));
             this.compDataSet = new WindowsFormsApp14.compDataSet();
             this.processorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.processorsTableAdapter = new WindowsFormsApp14.compDataSetTableAdapters.ProcessorsTableAdapter();
             this.tableAdapterManager = new WindowsFormsApp14.compDataSetTableAdapters.TableAdapterManager();
             this.processorsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.processorsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.stampTextBox = new System.Windows.Forms.TextBox();
             this.modelTextBox = new System.Windows.Forms.TextBox();
@@ -78,6 +78,60 @@
             this.processorsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.processorsDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // stampLabel
+            // 
+            stampLabel.AutoSize = true;
+            stampLabel.Location = new System.Drawing.Point(12, 41);
+            stampLabel.Name = "stampLabel";
+            stampLabel.Size = new System.Drawing.Size(89, 13);
+            stampLabel.TabIndex = 1;
+            stampLabel.Text = "Производитель:";
+            // 
+            // modelLabel
+            // 
+            modelLabel.AutoSize = true;
+            modelLabel.Location = new System.Drawing.Point(13, 67);
+            modelLabel.Name = "modelLabel";
+            modelLabel.Size = new System.Drawing.Size(39, 13);
+            modelLabel.TabIndex = 3;
+            modelLabel.Text = "Model:";
+            // 
+            // socketLabel
+            // 
+            socketLabel.AutoSize = true;
+            socketLabel.Location = new System.Drawing.Point(8, 93);
+            socketLabel.Name = "socketLabel";
+            socketLabel.Size = new System.Drawing.Size(44, 13);
+            socketLabel.TabIndex = 5;
+            socketLabel.Text = "Socket:";
+            // 
+            // coresLabel
+            // 
+            coresLabel.AutoSize = true;
+            coresLabel.Location = new System.Drawing.Point(15, 119);
+            coresLabel.Name = "coresLabel";
+            coresLabel.Size = new System.Drawing.Size(37, 13);
+            coresLabel.TabIndex = 7;
+            coresLabel.Text = "Cores:";
+            // 
+            // threadsLabel
+            // 
+            threadsLabel.AutoSize = true;
+            threadsLabel.Location = new System.Drawing.Point(3, 145);
+            threadsLabel.Name = "threadsLabel";
+            threadsLabel.Size = new System.Drawing.Size(49, 13);
+            threadsLabel.TabIndex = 9;
+            threadsLabel.Text = "Threads:";
+            // 
+            // intGraphLabel
+            // 
+            intGraphLabel.AutoSize = true;
+            intGraphLabel.Location = new System.Drawing.Point(12, 173);
+            intGraphLabel.Name = "intGraphLabel";
+            intGraphLabel.Size = new System.Drawing.Size(54, 13);
+            intGraphLabel.TabIndex = 11;
+            intGraphLabel.Text = "Int Graph:";
             // 
             // compDataSet
             // 
@@ -135,6 +189,31 @@
             this.processorsBindingNavigator.TabIndex = 0;
             this.processorsBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -162,22 +241,16 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -185,7 +258,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -194,66 +267,30 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // processorsBindingNavigatorSaveItem
             // 
             this.processorsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.processorsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("processorsBindingNavigatorSaveItem.Image")));
             this.processorsBindingNavigatorSaveItem.Name = "processorsBindingNavigatorSaveItem";
-            this.processorsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.processorsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.processorsBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.processorsBindingNavigatorSaveItem.Click += new System.EventHandler(this.processorsBindingNavigatorSaveItem_Click);
-            // 
-            // stampLabel
-            // 
-            stampLabel.AutoSize = true;
-            stampLabel.Location = new System.Drawing.Point(12, 41);
-            stampLabel.Name = "stampLabel";
-            stampLabel.Size = new System.Drawing.Size(40, 13);
-            stampLabel.TabIndex = 1;
-            stampLabel.Text = "Stamp:";
             // 
             // stampTextBox
             // 
             this.stampTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Stamp", true));
-            this.stampTextBox.Location = new System.Drawing.Point(58, 38);
+            this.stampTextBox.Location = new System.Drawing.Point(107, 38);
             this.stampTextBox.Name = "stampTextBox";
             this.stampTextBox.Size = new System.Drawing.Size(100, 20);
             this.stampTextBox.TabIndex = 2;
-            // 
-            // modelLabel
-            // 
-            modelLabel.AutoSize = true;
-            modelLabel.Location = new System.Drawing.Point(13, 67);
-            modelLabel.Name = "modelLabel";
-            modelLabel.Size = new System.Drawing.Size(39, 13);
-            modelLabel.TabIndex = 3;
-            modelLabel.Text = "Model:";
             // 
             // modelTextBox
             // 
@@ -263,15 +300,6 @@
             this.modelTextBox.Size = new System.Drawing.Size(100, 20);
             this.modelTextBox.TabIndex = 4;
             // 
-            // socketLabel
-            // 
-            socketLabel.AutoSize = true;
-            socketLabel.Location = new System.Drawing.Point(8, 93);
-            socketLabel.Name = "socketLabel";
-            socketLabel.Size = new System.Drawing.Size(44, 13);
-            socketLabel.TabIndex = 5;
-            socketLabel.Text = "Socket:";
-            // 
             // socketTextBox
             // 
             this.socketTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Socket", true));
@@ -279,15 +307,6 @@
             this.socketTextBox.Name = "socketTextBox";
             this.socketTextBox.Size = new System.Drawing.Size(100, 20);
             this.socketTextBox.TabIndex = 6;
-            // 
-            // coresLabel
-            // 
-            coresLabel.AutoSize = true;
-            coresLabel.Location = new System.Drawing.Point(15, 119);
-            coresLabel.Name = "coresLabel";
-            coresLabel.Size = new System.Drawing.Size(37, 13);
-            coresLabel.TabIndex = 7;
-            coresLabel.Text = "Cores:";
             // 
             // coresTextBox
             // 
@@ -297,15 +316,6 @@
             this.coresTextBox.Size = new System.Drawing.Size(100, 20);
             this.coresTextBox.TabIndex = 8;
             // 
-            // threadsLabel
-            // 
-            threadsLabel.AutoSize = true;
-            threadsLabel.Location = new System.Drawing.Point(3, 145);
-            threadsLabel.Name = "threadsLabel";
-            threadsLabel.Size = new System.Drawing.Size(49, 13);
-            threadsLabel.TabIndex = 9;
-            threadsLabel.Text = "Threads:";
-            // 
             // threadsTextBox
             // 
             this.threadsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.processorsBindingSource, "Threads", true));
@@ -313,15 +323,6 @@
             this.threadsTextBox.Name = "threadsTextBox";
             this.threadsTextBox.Size = new System.Drawing.Size(100, 20);
             this.threadsTextBox.TabIndex = 10;
-            // 
-            // intGraphLabel
-            // 
-            intGraphLabel.AutoSize = true;
-            intGraphLabel.Location = new System.Drawing.Point(12, 173);
-            intGraphLabel.Name = "intGraphLabel";
-            intGraphLabel.Size = new System.Drawing.Size(54, 13);
-            intGraphLabel.TabIndex = 11;
-            intGraphLabel.Text = "Int Graph:";
             // 
             // intGraphCheckBox
             // 
@@ -387,7 +388,7 @@
             this.dataGridViewCheckBoxColumn1.HeaderText = "IntGraph";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
-            // Form2
+            // cpu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -406,7 +407,7 @@
             this.Controls.Add(stampLabel);
             this.Controls.Add(this.stampTextBox);
             this.Controls.Add(this.processorsBindingNavigator);
-            this.Name = "Form2";
+            this.Name = "cpu";
             this.Text = "Процессор";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.compDataSet)).EndInit();
